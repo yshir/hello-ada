@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ubuntu:
+    container_name: ubuntu
+    build: .
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    tty: true
